@@ -39,7 +39,6 @@ export default function PropertyDetails() {
   const [expanded, setExpanded] = useState(false);
   const [imageViewerVisible, setImageViewerVisible] = useState(false);
 
-  // const { isSaved, saveLoading, toggleSave } = useSavedProperty(id ?? "");
   const authSupabase = useSupabase();
 
   const { isSaved, saveLoading, toggleSave } = useSavedProperty(id ?? "");

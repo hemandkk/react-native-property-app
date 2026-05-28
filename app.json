@@ -19,7 +19,12 @@
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION"
+      ],
+      "package": "Realestate.hemand"
     },
     "web": {
       "output": "static",
@@ -28,6 +33,12 @@
     },
     "plugins": [
       "expo-router",
+      [
+        "expo-location",
+        {
+          "locatWhenInUsePermission": "Allow Kribb to access your location to tag property coordinates"
+        }
+      ],
       [
         "expo-splash-screen",
         {
@@ -44,6 +55,12 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "fe6d0543-4b63-473b-a9ba-86b9ee7379a8"
+      }
     }
   }
 }
