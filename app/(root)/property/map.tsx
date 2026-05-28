@@ -17,6 +17,7 @@ export default function MapScreen() {
   const lat = parseFloat(latitude);
   const lng = parseFloat(longitude);
 
+  //build openstreet map URL
   const mapUrl = `https://www.openstreetmap.org/export/embed.html?bbox=${
     lng - 0.001
   }%2C${lat - 0.001}%2C${lng + 0.001}%2C${
