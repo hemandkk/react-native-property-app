@@ -51,6 +51,23 @@
           }
         }
       ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "packagingOptions": {
+              "pickFirst": [
+                "META-INF/versions/9/OSGI-INF/MANIFEST.MF"
+              ],
+              "excludes": [
+                "META-INF/DEPENDENCIES",
+                "META-INF/LICENSE*",
+                "META-INF/NOTICE*"
+              ]
+            }
+          }
+        }
+      ],
       "expo-font"
     ],
     "experiments": {
