@@ -1,25 +1,24 @@
 {
   "cli": {
-    "version": ">= 19.1.0",
+    "version": ">=20.0.0",
     "appVersionSource": "remote"
   },
   "build": {
-    "development": {
-      "developmentClient": true,
-      "distribution": "internal"
-    },
     "preview": {
       "android": {
         "buildType": "apk"
+      },
+      "env": {
+        "EXPO_NO_PREBUILD": "1"
       }
     },
     "production": {
       "android": {
         "buildType": "app-bundle"
+      },
+      "env": {
+        "EXPO_NO_PREBUILD": "1"
       }
     }
-  },
-  "submit": {
-    "production": {}
   }
 }
